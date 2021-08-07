@@ -1,0 +1,22 @@
+package com.raghu;
+
+import java.awt.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.print( Minstoyears(3456789));
+        System.out.print("years and");
+        System.out.print( Mintodays(3456789));
+        System.out.print("days");
+    }
+
+    public static double Mintodays(int a) {
+        double days = a * 0.000694444444;
+        return days;
+    }
+    public static double Minstoyears(int a){
+        double years =a*1.903*10000000;
+        return years;
+    }
+}
